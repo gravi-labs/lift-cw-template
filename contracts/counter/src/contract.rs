@@ -9,7 +9,7 @@ use crate::msg::{ExecuteMsg, {% unless minimal %}GetCountResponse, {% endunless 
 {% endunless %}
 {% if minimal %}/*
 {% endif %}// version info for migration info
-const CONTRACT_NAME: &str = "crates.io:{{project-name}}";
+const CONTRACT_NAME: &str = "crates.io:counter";
 const CONTRACT_VERSION: &str = env!("CARGO_PKG_VERSION");
 {% if minimal %}*/
 {% endif %}
